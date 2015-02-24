@@ -1,0 +1,17 @@
+Tema 3 APD - Calcul paralel folosind MPI
+
+Ene Adriana
+331 CC
+
+
+Detalii de implementare
+
+	Am citit in procesul master datele de intrare si le-am trimis fiecarui proces in parte. 
+	In functie de rank, fiecare proces va calcula o parte din matrice . 
+	Impartirea s-a facut in functie de latime.
+	Fiecare proces va trimite procesului master datele calculate 
+		si un mesaj de instiintare pentru ca masterul sa stie pana cand va primi date. 		
+	Fiecare vector trimis are pe prima pozitie, linia pe care se afla.
+	Masterul primeste fiecare vector si il scrie in matrice in functie de prima pozitie din vector. 
+	Masterul scrie la final matricea intr-un fisier de iesire.
+
